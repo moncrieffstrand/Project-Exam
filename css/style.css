@@ -1,0 +1,277 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#D9D15F;
+}
+
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#93A603;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+/* CONTACT PAGE **/
+
+/*Contact form*/
+.dark{
+  padding:15px;
+  background:#A6808E;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#F2BDD0;
+  color:#ffffff;
+  padding-top:1px;
+  min-height:5px;
+  border-bottom:#93A603 2px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:13px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#93A603;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#FFFFFF;
+  font-weight:bold;
+}
+
+/* HERO IMAGE */
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 68vh;
+    
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+     /* Background stylingggg */
+    background-image: url(https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero h1 {
+    /* Text styling */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero .btn {
+    /* button sizing */
+    display:block;
+    width: 120px;
+    height: 30px;
+    
+    /* button Border style */
+    border: 4px solid black;
+    
+      /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+     margin-left: auto;
+    margin-right: auto;
+    
+     /* button-text styling */
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    
+    /* Border stylinggg */
+    border: 3px solid white;
+      border-radius: 10px;
+    
+     
+    /* Background styling */
+    background-color: #A6808E;
+}
+    
+}
+
+
+/* Newsletter */
+
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#F2BDD0;
+    }
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:left;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+
+/* Boxes */
+
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:300px;
+}
+
+
+
+/* Sidebar */
+
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services/contact */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#F2BDD0;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#A6808E;
+  text-align: center;
+}
+
+
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
